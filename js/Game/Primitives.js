@@ -9,7 +9,7 @@ function createGround(world) {
     bodydef.AddShape(ground);
     bodydef.position.Set(0, 334);
     
-    var userdataobj = new Object();
+    var userdataobj = {};
     userdataobj.name = GROUND_PLANE;
     userdataobj.bodyType = GROUND_PLANE;
     
@@ -48,7 +48,7 @@ function createBox(world, x, y, width, height, fixed, name, bullet_type) {
     bodydef.AddShape(box);
     bodydef.position.Set(x, y);
     
-    var userdataobj = new Object();
+    var userdataobj = {};
     userdataobj.name = name;
     userdataobj.bodyType = "Primitive_Box";
     
